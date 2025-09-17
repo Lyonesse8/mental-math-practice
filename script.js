@@ -241,12 +241,12 @@ function submitAnswer() {
         feedbackEl.className = 'feedback correct';
         updateStats();
         
-        // Faster auto-advance - reduced from 800ms to 300ms
+        // Faster auto-advance - reduced from 800ms to 400ms
         setTimeout(() => {
             if (isGameActive) {
                 nextQuestion();
             }
-        }, 300);
+        }, 400);
     } else {
         // Wrong answer
         streak = 0;
