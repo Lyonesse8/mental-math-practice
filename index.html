@@ -4,42 +4,67 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mental Math Trainer</title>
+		<!-- Link to external CSS file -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-
 	<body>
 		<div class="container">
-			<h1>Mental Math Trainer</h1>
+			<h1>🧮 Mental Math Trainer</h1>
 
+			<!-- Settings Panel -->
 			<div class="settings-panel">
 				<div class="setting-group">
 					<label for="operation">Operation:</label>
 					<select id="operation">
 						<option value="addition">Addition (+)</option>
 						<option value="subtraction">Subtraction (-)</option>
-						<option value="multiplication">Multiplication (x)</option>
+						<option value="multiplication">Multiplication (×)</option>
 						<option value="division">Division (÷)</option>
 						<option value="mixed">Mixed Operations</option>
 					</select>
 				</div>
 
 				<div class="setting-group">
+					<label for="gameMode">Game Mode:</label>
+					<select id="gameMode">
+						<option value="fixed">Fixed Difficulty</option>
+						<option value="progression">Level Progression</option>
+					</select>
+				</div>
+
+				<div class="setting-group" id="difficultyGroup">
 					<label for="difficulty">Difficulty:</label>
 					<select id="difficulty">
-						<option value="easy">Easy</option>
-						<option value="medium">Medium</option>
-						<option value="hard">Hard</option>
-						<option value="expert">Expert</option>
+						<option value="easy">Easy (1-10)</option>
+						<option value="medium">Medium (1-50)</option>
+						<option value="hard">Hard (1-100)</option>
+						<option value="expert">Expert (1-500)</option>
 					</select>
 				</div>
 
 				<div class="setting-group">
-					<label for="timeLimit">Time Limit</label>
+					<label for="timeLimit">Time Limit (seconds):</label>
 					<input type="number" id="timeLimit" min="5" max="300" value="30" />
 				</div>
 			</div>
 
+			<!-- Game Area -->
 			<div class="game-area">
+				<div class="level-info" id="levelInfo" style="display: none">
+					<div class="level-display">
+						Level <span id="currentLevel">1</span>
+					</div>
+					<div class="level-progress">
+						<div class="level-bar">
+							<div class="level-fill" id="levelFill"></div>
+						</div>
+						<div class="level-text">
+							<span id="levelPoints">0</span> /
+							<span id="levelTarget">50</span> points to next level
+						</div>
+					</div>
+				</div>
+
 				<div class="question" id="question">Click Start to begin!</div>
 				<input
 					type="number"
@@ -78,7 +103,12 @@
 				</div>
 			</div>
 
+			<!-- Statistics Display -->
 			<div class="stats">
+				<div class="stat">
+					<span class="stat-value" id="level">1</span>
+					<div class="stat-label">Level</div>
+				</div>
 				<div class="stat">
 					<span class="stat-value" id="score">0</span>
 					<div class="stat-label">Score</div>
@@ -98,6 +128,7 @@
 			</div>
 		</div>
 
+		<!-- Link to external JavaScript file -->
 		<script src="script.js"></script>
 	</body>
 </html>
