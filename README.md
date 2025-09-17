@@ -1,6 +1,7 @@
 # Mental Math Practice Game
 
-<img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/dbad58dc-d282-498a-bbf4-fa94ae5763b5" />
+<img width="1919" height="1020" alt="image" src="https://github.com/user-attachments/assets/874f32a0-13a2-4107-9ae3-253d461cfdb0" />
+
 
 ## What I learned:
 ### HTML & CSS:
@@ -24,8 +25,8 @@
 - class based programming
 - error handling
 
-## possible improvements:
-- add sound effects
-- add difficulty progression
-- add user authentication
-- add multiplayer support
+## Possible improvements:
+- [ ] add sound effects
+- [x] add difficulty progression
+- [ ] add user authentication
+- [ ] add multiplayer support
