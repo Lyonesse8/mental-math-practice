@@ -37,7 +37,7 @@ mental-math-trainer/
 
 Clone the repository
 
-bash   git clone https://github.com/yourusername/mental-math-trainer.git
+bash   git clone https://github.com/Lyonesse8/mental-math-trainer.git
 
 Open index.html in your web browser
 Start playing!
@@ -143,7 +143,7 @@ mental-math-trainer/
 
 リポジトリをクローン
 
-bash   git clone https://github.com/yourusername/mental-math-trainer.git
+bash   git clone https://github.com/Lyonesse8/mental-math-trainer.git
 
 Webブラウザで index.html を開く
 プレイ開始！
