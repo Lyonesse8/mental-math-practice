@@ -104,11 +104,6 @@ Error Handling: Graceful fallbacks and user-friendly messages
  Add social media sharing for high scores
  Implement voice input for hands-free practice
 
-## 🙏 Acknowledgments
-
-Inspired by the desire to improve mental math skills
-Built as a portfolio project to demonstrate full-stack development capabilities
-
 -------------------
 
 ## 📝 プロジェクト概要
@@ -209,10 +204,5 @@ HTTPリクエスト/レスポンス処理
  モバイルアプリ版の作成（React Native）
  ハイスコアのソーシャルメディア共有機能
  ハンズフリー練習用の音声入力実装
-
-## 🙏 謝辞
-
-暗算スキルを向上させたいという思いから着想
-フルスタック開発能力を実証するポートフォリオプロジェクトとして構築
 
 
